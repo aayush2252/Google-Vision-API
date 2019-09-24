@@ -27,7 +27,7 @@ export const getGoogleVisionUrl = (data, dispatch) => {
   // Google Vision API Docs: https://cloud.google.com/vision/docs/reference/rest/
 
   axios
-    .post("https://vision.googleapis.com/v1/images:annotate?key=AIzaSyBhhCTbBJ_ArXgYD_jZ1k27klD3a4QY1MQ", data)
+    .post("https://vision.googleapis.com/v1/images:annotate?key=YOUR-API-KEY", data)
     .then(res => {
         dispatch({
           type: actionTypes.GET_FACEANNOTATION_SUCCESS,
